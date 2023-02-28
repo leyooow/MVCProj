@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<MVCProj.Models.Pdf>
 
 @{
-    ViewBag.Title = "Leo";
+    ViewBag.Title = "HPD Files";
 
 
 }
@@ -78,10 +78,13 @@
 
                 <td>@file.Name</td>
 
-                <td><a class="view" href="javascript:;" rel='@file.Id'>View PDF</a></td>
+                <td>
+                    <a class="view" href="javascript:;" rel='@file.Id'>View</a> &nbsp; &nbsp;
+                    <a href="javascript:;" onclick="DownloadFile(@file.Id)">Download</a> &nbsp; &nbsp;
+                    <a href="#" onclick="">Edit</a> &nbsp; &nbsp;
+                    <a href="#" onclick="">Delete</a>&nbsp; &nbsp;
+                </td>
 
-
-                <td width="200"><a href="javascript:;" onclick="DownloadFile(@file.Id)">Download</a></td>
             </tr>
 
             </tbody>

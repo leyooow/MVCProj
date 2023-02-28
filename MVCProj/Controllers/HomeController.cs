@@ -34,7 +34,7 @@ namespace MVCProj.Controllers
 
         public ActionResult Leo()
         {
-            ViewBag.Message = "Hello Leo";
+            ViewBag.Message = "Upload a PDF only.";
 
             return View(GetFiles());
         }
