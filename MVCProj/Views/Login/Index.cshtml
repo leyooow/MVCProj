@@ -1,0 +1,51 @@
+﻿@{
+    Layout = null;
+}
+@Styles.Render("~/Content/NavBar.css")
+
+
+<div>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top" style="display:none;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Login", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Leo", "Leo", "Home")</li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+        <label for="menu-icon"></label>
+        <nav class="nav">
+            <ul class="pt-5">
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="section-center">
+            <h1 class="mb-0">Pure CSS Menu</h1>
+        </div>
+    </div>
+    
